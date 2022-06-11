@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    /* -------
+        Colors
+        ------ */
+    --strong-cyan: hsl(172, 67%, 45%);
+    --dark-cyan: hsl(183, 100%, 15%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-graylish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+
+    /* -------
+         Fonts
+        ------ */
+    --font-size: 2.4rem;
+    --font-weight: 700;
+
+
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+    font-size: var(--font-size);
+    font-family: 'Space Mono', monospace;
+}
+
+button {
+    cursor: pointer;
+}
