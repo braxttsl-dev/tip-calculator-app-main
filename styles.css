@@ -22,7 +22,6 @@ html {
     /* -------
          Fonts
         ------ */
-    --font-size: 2.4rem;
     --font-weight: 700;
 
 
@@ -30,15 +29,135 @@ html {
 
 body {
     -webkit-font-smoothing: antialiased;
+    height: 100vh;
 }
 
 body,
 input,
 button {
-    font-size: var(--font-size);
+    border: none;
     font-family: 'Space Mono', monospace;
 }
 
 button {
     cursor: pointer;
+}
+
+
+
+/* -------
+ Typography
+    ------- */
+h2 {
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+p {
+    color: var(--grayish-cyan);
+}
+
+.result {
+    color: var(--strong-cyan);
+    font-size: 3.2rem
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: var(--grayish-cyan);
+    margin-bottom: 1rem;
+}
+
+input,
+#tip {
+    font-size: 2.4rem;
+}
+
+/* -------
+    Layout
+    ------ */
+body {
+    background-color: #C5E4E7;
+}
+
+input {
+    width: 100%;
+    direction: rtl;
+    color: var(--dark-cyan);
+    padding-right: 2rem;
+    min-height: 4.8rem;
+}
+
+.logo-header{
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
+}
+
+#bill-input {
+    background: var(--light-graylish-cyan) url("images/icon-dollar.svg") no-repeat 2rem center;
+}
+
+.app-container {
+    background-color: var(--white);
+    border-radius: 25px 25px 0px 0px;
+    padding: 3rem;
+    display: grid;
+    gap: 3rem;
+
+}
+
+.tip-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem 1.7rem;
+}
+
+#people-input {
+    background: var(--light-graylish-cyan) url("images/icon-person.svg") no-repeat 2rem center;
+}
+
+.tip-container input {
+    background-color: var(--light-graylish-cyan);
+    text-align: right;
+    padding-right: 2rem;
+}
+
+#tip {
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: var(--strong-cyan);
+    color: var(--dark-cyan);
+}
+
+.unactive {
+    background-color: var(--dark-cyan);
+    color: white;
+}
+
+
+
+.app-container-result {
+    background-color: var(--dark-cyan);
+    border-radius: 15px;
+    padding: 3rem 2rem;
+}
+
+.result-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#reset-btn {
+    background-color: var(--strong-cyan);
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+
 }
