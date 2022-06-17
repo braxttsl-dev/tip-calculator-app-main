@@ -20,55 +20,63 @@
   <section class="logo-header">
     <img class="logo" src="images/logo.svg" alt="logo that says splitter">
   </section>
-  
+
   <main class="app-container">
+    <section class="flex-container">
+      <div class="Flex-1">
 
-    <section class="app-container-bill">
-      <h3>Bill</h3>
-      <input id="bill-input" type="text">
-    </section>
+        <section class="app-container-bill">
+          <h3>Bill</h3>
+          <input id="bill-input" type="text" placeholder="0" data-bill="">
 
-    <section class="app-container-tip">
-      <h3>Select Tip %</h3>
-      <div class="tip-container">
-        <button id="tip" class="unactive">5%</button>
-        <button id="tip" class="unactive">10%</button>
-        <button id="tip" class="unactive">15%</button>
-        <button id="tip" class="unactive">25%</button>
-        <button id="tip" class="unactive">50%</button>
-        <input type="text" placeholder="Custom">
+        </section>
+
+        <section class="app-container-tip">
+          <h3>Select Tip %</h3>
+          <div class="tip-container">
+            <button id="tip" class="unactive" data-tip=".05">5%</button>
+            <button id="tip" class="unactive" data-tip=".10">10%</button>
+            <button id="tip" class="unactive" data-tip=".15">15%</button>
+            <button id="tip" class="unactive" data-tip=".25">25%</button>
+            <button id="tip" class="unactive" data-tip=".50">50%</button>
+            <input type="text" placeholder="Custom">
+          </div>
+        </section>
+
+        <section class="app-container-people">
+          <h3>Number of People</h3>
+          <input id="people-input" type="text" placeholder='0' data-people="">
+        </section>
+      </div>
+
+      <div class="Flex-2">
+        <section class="app-container-result">
+          <div class="result-container">
+            <div>
+              <h2>Tip Amount</h2>
+              <p>/ person</p>
+            </div>
+            <p class="result" id="result-tip">$0.00</p>
+          </div>
+
+          <div class="result-container">
+            <div>
+              <h2>Total</h2>
+              <p>/ person</p>
+            </div>
+            <p class="result" id="result-total">$0.00</p>
+          </div>
+
+          <button id="reset-btn">RESET</button>
+        </section>
       </div>
     </section>
 
-    <section class="app-container-people">
-      <h3>Number of People</h3>
-      <input id="people-input" type="text">
-    </section>
-
-    <section class="app-container-result">
-      <div class="result-container">
-        <div>
-          <h2>Tip Amount</h2>
-          <p>/ person</p>
-        </div>
-        <p class="result" id="result">$0.00</p>
-      </div>
-
-      <div class="result-container">
-        <div>
-          <h2>Total</h2>
-          <p>/ person</p>
-        </div>
-        <p class="result" id="result">$0.00</p>
-      </div>
-
-      <button id="reset-btn">RESET</button>
-    </section>
 
     </section>
   </main>
 
 </body>
-<script href="index.js"></script>
+<script src="index.js"></script>
 
 </html>
